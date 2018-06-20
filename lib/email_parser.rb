@@ -8,7 +8,8 @@ class EmailParser
     def self.parse(email_string)
         remove_commas = (email_string.split(//) - [","]).join
         email_list = remove_commas.split()
-    end 
+        email_list
+    end
 
 
 end
