@@ -12,8 +12,9 @@ class EmailParser
     def parse
         @remove_commas = (@email.split(//) - [","]).join
         @email_list = @remove_commas.split()
-        @email_list
+        @email_list.uniq
     end
+
 
 
 end
