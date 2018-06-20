@@ -6,8 +6,9 @@ class EmailParser
     attr_accessor :email
 
     def self.parse(email_string)
-        remove_commas = (emails.split(//) - [","]).join
-        remove_commas.split()
+        remove_commas = (email_string.split(//) - [","]).join
+        email_list = remove_commas.split()
+        
 
 
 end
