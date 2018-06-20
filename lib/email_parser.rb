@@ -7,6 +7,7 @@ class EmailParser
 
     def initialize(email)
         @email = email
+    end 
 
     def self.parse
         @remove_commas = (@email.split(//) - [","]).join
